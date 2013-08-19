@@ -1,0 +1,122 @@
+%% start of file `template_en.tex'.
+%% Copyright 2007 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Vítor}
+\familyname{Baptista}
+\title{Cientista da Computação}               % optional, remove the line if not wanted
+%\address{\hspace{-1in}851 S. Morgan (M/C 249)}{Chicago, IL 60607-7045}    % optional, remove the line if not wanted
+\mobile{+55 (51) 8269-0229}                    % optional, remove the line if not wanted
+%\phone{(312) 413-8265}                      % optional, remove the line if not wanted
+%\fax{312 996 1491}                          % optional, remove the line if not wanted
+\email{vitor@vitorbaptista.com}                      % optional, remove the line if not wanted
+\extrainfo{http://vitorbaptista.com} % optional, remove the line if not wanted
+%\photo[64pt]{my_photo_smaller}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\quote{"Seja a mudança que desejas ver no mundo."\newline Mahatma Gandhi}                 % optional, remove the line if not wanted
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+%\section{Master thesis}
+%\cvline{title}{\emph{Title}}
+%\cvline{supervisors}{Supervisors}
+%\cvline{description}{\small Short thesis abstract}
+
+\section{Experiência}
+%\subsection{Vocational}
+\cventry{2011--Atual}{Desenvolvedor}{ThoughtWorks}{Porto Alegre}{RS}
+{Trabalho no desenvolvimento de um site americano de leilão de carros.
+É um sistema com mais de 5 anos e 250 mil linhas de código, e cerca de 50
+pessoas na equipe, distribuídas entre Brasil, Chicago, Atlanta e Índia.
+Usamos processos de desenvolvimento ágil, com reuniões diárias por vídeo, testes de software,
+programação em par, etc.}
+\cventry{2007--2010}{Pesquisador}{Laboratório de Aplicações de Vídeo
+Digital}{João Pessoa}{PB}{Trabalhei no projeto de desenvolvimento do
+OpenGinga, uma implementação livre do middleware brasileiro de TV Digital,
+o Ginga. Feito em C++ e Java para o GNU/Linux.}                % arguments 3 to 6 are optional
+\cventry{2010}{Estagiário}{Linux Foundation}{}{}{Fui selecionado como um
+estudante no Google's Summer of Code 2010 para a Linux Foundation. Trabalhei
+por 3 meses com o líder do projeto OpenPrinting, Till Kamppeter,
+desenvolvendo um compressor para PostScript Description Files (drivers de
+impressoras). Ele foi feito em Python e consegui uma taxa de compressão
+superior a 90\%. É incluso por padrão em diversas distribuições GNU/Linux,
+inclusive no Ubuntu.}% arguments 3 to 6 are optional
+%\cventry{1997--2000}{Applications Developer}{Information Resources Inc.}{Chicago}{IL}{Design, coding, and testing of market research applications.}                % arguments 3 to 6 are optional
+%\cventry{1993-1996}{Statistical Analyst}{Kemper Insurance Companies}{Long Grove}{IL}{Statistical report filing to state agencies and the automation these reports.}                % arguments 3 to 6 are optional
+%\cventry{Autumn 1991}{Teaching Assistant}{University of Illinois}{Chicago}{IL}{Lead the discussion sections for a large lecture course.}                % arguments 3 to 6 are optional
+%\subsection{Miscellaneous}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}% arguments 3 to 6 are optional
+
+\section{Educação}
+\cventry{2006--2010}{Bachalerando de Ciência da Computação}{Universidade Federal da Paraíba, Departamento de Informática}{João Pessoa}{PB}{Monografia entitulada ``Uma ferramenta para verificação de compatibilidade entre licenças de software.''}
+
+\vspace{.4in}\section{Habilidades}
+\cvcomputer{Linguagens}{Ruby, JavaScript, Bash, Python, C, PHP, Java} {}{}
+\cvcomputer{Frameworks} {Rails, Sinatra, Backbone.js} {}{}
+%\cvcomputer{}{} {}{}
+
+\section{Línguas}
+\cvlanguage{Português}{Nativo}{}
+\cvlanguage{Inglês}{Avançado}{}
+%\cvlanguage{language 3}{Skill level}{Comment}
+
+\section{Projetos Pessoais}
+\cvline{WeLoveIran.org}{\small Projeto feito com alguns amigos para ajudar a campanha
+do IsraelLovesIran.com, um site onde pessoas de ambos países podem trocar depoimentos
+e mensagens de amor, para mostrar que eles não apóiam uma possível guerra
+(\url{https://github.com/rafaelpetry/israelovesiran}) }
+\cvline{Transparência Pública}{\small Pequenos projetos relacionados a dados abertos
+e transparência pública, principalmente tentando entender melhor a realidade paraibana
+(\url{http://vitorbaptista.com/category/transparencia/})}
+
+\section{Interesses}
+\cvline{Software Livre}{\small Como membro do Grupo de Usuários GNU/Linux
+da Paraíba, ajudei a organizar diversos eventos de Software Livre na
+região, inclusive o ENSOL, um dos maiores do Brasil.}
+
+\closesection{}                   % needed to renewcommands
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem[+]{Item 3}            % optional other symbol
+
+%\section{Extra 2}
+%\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+%\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+%cvlistdoubleitem[\Neutral]{Item 3}{}
+
+% Publications from a BibTeX file
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.

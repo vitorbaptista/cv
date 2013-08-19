@@ -1,0 +1,127 @@
+%% start of file `template_en.tex'.
+%% Copyright 2007 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Vítor}
+\familyname{Baptista}
+\title{Web Developer}               % optional, remove the line if not wanted
+%\address{\hspace{-1in}851 S. Morgan (M/C 249)}{Chicago, IL 60607-7045}    % optional, remove the line if not wanted
+\mobile{+55 (51) 8269-0229}                    % optional, remove the line if not wanted
+%\phone{(312) 413-8265}                      % optional, remove the line if not wanted
+%\fax{312 996 1491}                          % optional, remove the line if not wanted
+\email{vitor@vitorbaptista.com}                      % optional, remove the line if not wanted
+\extrainfo{http://vitorbaptista.com} % optional, remove the line if not wanted
+%\photo[64pt]{my_photo_smaller}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\quote{"Be the change you want to see in the world."\newline Mahatma Gandhi}                 % optional, remove the line if not wanted
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+%\section{Master thesis}
+%\cvline{title}{\emph{Title}}
+%\cvline{supervisors}{Supervisors}
+%\cvline{description}{\small Short thesis abstract}
+
+\section{Experience}
+%\subsection{Vocational}
+\cventry{2011--Current}{Developer}{ThoughtWorks}{Porto Alegre}{RS}
+{Working on the development of a live cars auction website.
+It's a Rails system with more than 5 years and 250k lines of code.
+The team is composed of around 50 people distributed between Brazil, Chicago,
+Atlanta, Canada and India. We're using agile processes, with daily standups, TDD,
+pair programming, etc.}
+\cventry{2007--2010}{Researcher}{Digital Video Applications Lab}{João Pessoa}{PB}
+{I've worked on the development of OpenGinga, a free implementation of the brazilian
+digital tv middleware, Ginga. It was done in C++ and Java to run on a GNU/Linux box.}
+\cventry{2010}{Intern}{Linux Foundation}{}{}{I was selected as a student in
+Google's Summer of Code 2010 for the Linux Foundation. I've worked for 3 months
+with the leader of the OpenPrinting project, Till Kamppeter, developing in Python
+a compressor for PostScript Description Files (printer drivers). I was able to get 90\% of
+compression ratio. It's included by default in all the main GNU/Linux distributions,
+like Ubuntu, Debian and Fedora.}
+%\cventry{1997--2000}{Applications Developer}{Information Resources Inc.}{Chicago}{IL}{Design, coding, and testing of market research applications.}                % arguments 3 to 6 are optional
+%\cventry{1993-1996}{Statistical Analyst}{Kemper Insurance Companies}{Long Grove}{IL}{Statistical report filing to state agencies and the automation these reports.}                % arguments 3 to 6 are optional
+%\cventry{Autumn 1991}{Teaching Assistant}{University of Illinois}{Chicago}{IL}{Lead the discussion sections for a large lecture course.}                % arguments 3 to 6 are optional
+%\subsection{Miscellaneous}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}% arguments 3 to 6 are optional
+
+\section{Education}
+\cventry{2006--2010}{Bachelor in Computer Science}{Federal University of Paraíba, Department of Informatics}{João Pessoa}{PB}{Bachelor thesis entitled ``A tool for the verification of compatibility between software licenses.''}
+
+\section{Side Projects}
+\cvline{WeLoveIran.org}{\small A project made with a few friends at ThoughtWorks to help
+IsraeLovesIran.com's campaing. They've made a place where people from both countries can
+send peace and love messages to each other, showing that they don't support a possible war
+between their countries.  (\url{https://github.com/rafaelpetry/israelovesiran}) }
+\cvline{Public Transparency}{\small Pet projects related to open data and public transparency,
+mainly trying to understand better the reality in my state, Paraíba
+(\url{http://vitorbaptista.com/category/transparencia/})}
+\cvline{ThoughtWorks' TechRadar}{\small Visualization on ThoughtWorks' TechRadar, to try to
+make the data available at \url{http://thoughtworks.com/radar} more accessible.
+(\url{http://labs.vitorbaptista.com/techradar/})}
+\cvline{Bingo do Zé}{\small Bingo that satirized Zé Maranhão, one of the candidates for governor
+in my state. He and his family has been inside the politics of my state since the '60 (and did a lot of
+bad things). This was just a humorous way to protest against him. It was made entirely in JavaScript and CSS.
+(\url{http://labs.vitorbaptista.com/bingodoze/})}
+
+\vspace{.4in}\section{Skills}
+\cvcomputer{Languages}{Ruby, JavaScript, Bash, Python, C, PHP, Java} {}{}
+\cvcomputer{Frameworks} {Rails, Sinatra, Backbone.js, D3.js, Raphaël.js} {}{}
+%\cvcomputer{}{} {}{}
+
+\section{Languages}
+\cvlanguage{Portuguese}{Native}{}
+\cvlanguage{English}{Advanced}{}
+%\cvlanguage{language 3}{Skill level}{Comment}
+
+\section{Other Interests}
+\cvline{Free Software}{\small As a member of my state's GNU/Linux User Group
+I've coordinated the III ENSOL, one of the biggest FLOSS meetings of Brazil's
+Northeast, which attracts yearly more than 600 participants.}
+
+\closesection{}                   % needed to renewcommands
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem[+]{Item 3}            % optional other symbol
+
+%\section{Extra 2}
+%\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+%\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+%cvlistdoubleitem[\Neutral]{Item 3}{}
+
+% Publications from a BibTeX file
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
