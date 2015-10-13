@@ -20,17 +20,17 @@
 \recomputelengths                             % required when changes are made to page layout lengths
 
 % personal data
-\firstname{Vítor}
+\firstname{Vitor}
 \familyname{Baptista}
 \title{Web Developer}               % optional, remove the line if not wanted
 %\address{\hspace{-1in}851 S. Morgan (M/C 249)}{Chicago, IL 60607-7045}    % optional, remove the line if not wanted
-\mobile{+55 (83) 9630-0657}                    % optional, remove the line if not wanted
+%\mobile{+55 (83) 9630-0657}                    % optional, remove the line if not wanted
 %\phone{(312) 413-8265}                      % optional, remove the line if not wanted
 %\fax{312 996 1491}                          % optional, remove the line if not wanted
 \email{vitor@vitorbaptista.com}                      % optional, remove the line if not wanted
 \extrainfo{http://vitorbaptista.com} % optional, remove the line if not wanted
 %\photo[64pt]{my_photo_smaller}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
-\quote{"Be the change you want to see in the world."\newline Mahatma Gandhi}                 % optional, remove the line if not wanted
+%\quote{"Be the change you want to see in the world."\newline Mahatma Gandhi}                 % optional, remove the line if not wanted
 
 %\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
 
@@ -48,83 +48,100 @@
 
 \section{Experience}
 %\subsection{Vocational}
-\cventry{2012--Current}{Developer}{Open Knowledge Foundation}{}{}
+\cventry{2012--2014}{Developer}{Open Knowledge Foundation}{Cambridge}{UK}
 {
-  I work on CKAN (\url{http://ckan.org}), a free software Python web application
-  for Open Data Portals. It has been used by many governments, including
-  US (\url{http://data.gov}), UK (\url{http://data.gov.uk}), and Brazil
-  (\url{http://dados.gov.br}).
-  Before that, I was part of OpenSpending (\url{http://openspending.org}) team.
-  It's a tool to help working with monetary data, providing some visualizations
-  and an API.
+  I was part of the CKAN (\url{http://ckan.org}) team. CKAN is the world's most
+  used open source data portal portal, powering sites like
+  \url{http://data.gov.uk} and \url{http://data.gov}. It's written in Python
+  using Pylons and Postgres. The core team was composed of about 10 people
+  geographically distributed.
+  \\
+  My latest contribution was revamping its data
+  visualization system, allowing a single dataset to have multiple
+  visualizations, and making it easier to build custom visualizations. This
+  feature was initially developed for London's Natural History Museum Data
+  Portal (\url{http://data.nhm.ac.uk/}), and was later released as part of CKAN
+  2.4.
+  \\
+  I've also deployed a few data portals like \url{http://datos.gob.mx} and
+  \url{http://data.org.pk}, making sure their servers are secured and able to
+  handle their expected load. customizing them based on the clients'
+  requirements.
 }
-\cventry{2011--2012}{Developer}{ThoughtWorks}{Porto Alegre}{RS}
+\cventry{2011--2012}{Developer}{ThoughtWorks}{Porto Alegre}{Brazil}
 {
-  I've worked as a Rails software consultant for a couple projects during my time
-  at ThoughtWorks.
-  The first one was with a team of 7 people, helping a startup in San Francisco
-  be able to meet a deadline. The tech stack was Rails + JavaScript and solr for
-  full-text search. It ran for 1.5 months.
-  The last one was with an online vehicle auctions' site. It's one of the largest
-  Rails codebases worldwide, with almost 300k lines of code, and in production
-  since 2007. The team had 50+ people, distributed between the US, Brazil, Canada
-  and India. I was part of the 6-people team that started developing it from
-  Brazil.
-}
-\cventry{2007--2010}{Researcher}{Digital Video Applications Lab}{João Pessoa}{PB}
-{
-  I've worked on the development of OpenGinga, a free implementation of the brazilian
-  digital tv middleware, Ginga. It was done in C++ and Java to run on a GNU/Linux box.
+  I've worked as a Rails developer for a few projects during my time at
+  ThoughtWorks. The projects were managed following agile development
+  practices, including pair programming.
+  \\
+  My main contribution was being part of the team of 6 people that flew from
+  Brazil to the USA to work on-site for 3 months with one of the (at the time)
+  largest clients of ThoughtWorks. The objective was to meet the client and
+  their internal developers, work with them, understand the code structure and
+  their challenges, to later bring the project to Brazil.
+  \\
+  It was one of the largest and oldest Rails codebases worldwide, with about
+  300k lines of code, in production since 2007. The team had 50+ people
+  distributed between two locations in the USA, Canada, India, and Brazil.
 }
 \cventry{2010}{Intern}{Linux Foundation}{}{}
 {
   I was selected as a student in Google's Summer of Code 2010 for the Linux Foundation.
   I've worked for 3 months with the leader of the OpenPrinting project, Till Kamppeter,
-  developing in Python a compressor for PostScript Description Files (printer drivers).
-  I was able to get 90\% of compression ratio. It's included by default in all the main
-  GNU/Linux distributions, like Ubuntu, Debian and Fedora.
+  developing in Python a compressor for PostScript Description Files (printer
+  drivers) named pyppd (\url{https://github.com/vitorbaptista/pyppd}).  I was
+  able to get 90\% of compression ratio. It's included by default in all the
+  main GNU/Linux distributions, like Ubuntu, Debian and Fedora.
 }
-%\cventry{1997--2000}{Applications Developer}{Information Resources Inc.}{Chicago}{IL}{Design, coding, and testing of market research applications.}                % arguments 3 to 6 are optional
-%\cventry{1993-1996}{Statistical Analyst}{Kemper Insurance Companies}{Long Grove}{IL}{Statistical report filing to state agencies and the automation these reports.}                % arguments 3 to 6 are optional
-%\cventry{Autumn 1991}{Teaching Assistant}{University of Illinois}{Chicago}{IL}{Lead the discussion sections for a large lecture course.}                % arguments 3 to 6 are optional
-%\subsection{Miscellaneous}
-%\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}% arguments 3 to 6 are optional
+\cventry{2007--2010}{Researcher}{Digital Video Applications Lab}{João Pessoa}{Brazil}
+{
+  I've worked on the development of OpenGinga, a free implementation of the brazilian
+  digital tv middleware, Ginga. It was done in C++ and Java and ran on a GNU/Linux box.
+}
 
 \section{Education}
-\cventry{2013--2015 (expected)}{Master's in Computer Science}
-{Federal University of Paraíba, Department of Informatics}{João Pessoa}{PB}
+\cventry{2013--2015}{Master's in Computer Science}
+{Federal University of Paraíba (UFPB)}{Paraíba}{Brazil}
 {
-  Building a tool to increase the visibility into the law-making process by
-  applying DVCSs to laws
+  I've built a statistical model using R and Python that detects when a
+  legislator is changing her position in relation to the government, entering
+  or leaving its coalition, based on her voting patterns during rollcalls. The
+  final model was based on the C5.0 method. It achieved 90\% accuracy with an
+  area under the ROC curve of 0.88.
 }
 \cventry{2006--2010}{Bachelor in Computer Science}
-{Federal University of Paraíba, Department of Informatics}{João Pessoa}{PB}
+{Federal University of Paraíba (UFPB)}{Paraíba}{Brazil}
 {
-  Bachelor thesis entitled ``A tool for the verification of compatibility between software licenses.''
+  I've built a software that returns if two or more software licenses are
+  compatible or not. They have to be described in the Creative Commons Rights
+  Expression Language (ccREL). This could help companies and developers to
+  better understand if they can add in their projects a third-party library
+  that's licensed under some other license.
 }
 
 \section{Projects}
 \cvline{Orçamento ao seu alcance}
 {\small 
-  This is a visualization of the brazilian federal budget. We show how much of
-  it went to each public body and, more importantly, how much was actually
-  spent. We focus on underspending. For example, a person could go and check
-  the Ministry of Education budget in 2012, and she might be surprised to learn
-  that more than 16\% of its budget wasn't spent. Hopefully, this would raise
-  questions, and she'll try to find out with her representatives what's
-  happening.
+  It was made by me with a designer and a project manager for a brazilian
+  NGO that monitors the government spending. The main objective was to raise
+  awareness of the problem of underspending by the Brazilian federal
+  government. It was built in 6 weeks, from inception to production, as a
+  single-page app using Angular 1.0, Rails 4.0, and NVD3.js.
   (\url{http://orcamento.inesc.org.br})
 }
 \cvline{Escola Que Queremos}
 {\small 
   In Brazil, schools are ranked based on IDEB, the Basic Education's
-  Development Index. It defines what's a good school, and it's used to plan
-  where money will be invested.
-  The index fails to show many nuances on what makes a good school, as it
-  considers only approval rate and scores in Math and Portuguese. So we built a
-  tool that allows you to build your own score, picking whatever matters to
-  you, and compare other schools related to it.
-  It was built in a 2-day hackathon. I did the design and front-end programming.
+  Development Index. It defines what's a good school based on approval rates
+  and scores in Math and Portuguese. That's quite limiting: what about all the
+  other things that are important as well, like offering sports, having a
+  computer lab, or even basic things like offering lunch for the students.
+  What's important to me might be irrelevant to you. So, during a 2-day
+  hackathon, I built a tool with other 3 friends (2 devs and 1 journalist) that
+  allows the user to build her own score, picking whatever matters to her. She
+  can then compare the Brazilian schools using this custom score. I was
+  responsible for the design and front-end programming. It was built as a
+  single-page app using Rails 3.2 and D3.js. We won the first place.
   (\url{http://escolaquequeremos.org})
 }
 \cvline{Reputação S/A}
@@ -144,65 +161,22 @@
   interactive visualization that shows the growth and decrease of the political
   parties in the states. How many mayors they got elected, how many people
   they'll govern, etc..
-  It's a single-page app built with d3.js. We updated its data while the
-  results were published, live. There were almost 150.000 visits in two days.
+  It's a single-page app built with D3.js. We updated the data live, while the
+  results were being published. There were almost 150.000 visits in two days.
   (\url{http://estadaodados.com/eleicoes2012/})
 }
 \cvline{Retrato da Violência}
 {\small
-  I did with some friends an interactive visualization on the data about
-  rapes in Rio Grande do Sul, a state in Brazil. We've worked on it for a few
-  weeks from home, in our spare time, as our entry in the W3C's contest
-  DecodersRS. We had lots of fun, and won the first place in the end.
+  I worked with a couple friends an interactive visualization on the data about
+  rapes in the Brazilian state Rio Grande do Sul. This was for the DecodersRS
+  contest organized by W3C Brazil. This was done in a couple weeks during our
+  spare time. We won the first place.
   (\url{http://retratodaviolencia.org})
-}
-\cvline{pyppd}
-{\small
-  This is a compressor for PPD files, that are used somewhat like
-  printer's drivers. It was useful for Ubuntu, because when deploying a new
-  version, they had to fit everything in a CD. So, they had either to cut support
-  for older printers, or leave other improvements out.
-  With this project, I got >90\% compression rate. It freed them more than 20 MB,
-  which is quite a lot in a 700 MB CD. Since then, it's being used by default in
-  many other GNU/Linux distributions.
-  (\url{http://github.com/vitorbaptista/pyppd/})
 }
 
 \vspace{.4in}\section{Skills}
-\cvcomputer{Languages}{Ruby, JavaScript, Python, Bash, C, PHP, Java} {}{}
-\cvcomputer{Frameworks}{Rails, Sinatra, Angular.js, D3.js, NodeJS, Raphaël.js} {}{}
-%\cvcomputer{}{} {}{}
-
-\clearpage
-
-\section{Languages}
-\cvlanguage{Portuguese}{Native}{}
-\cvlanguage{English}{Advanced}{}
-%\cvlanguage{language 3}{Skill level}{Comment}
-
-\section{Other Interests}
-\cvline{Free Software}{\small As a member of my state's GNU/Linux User Group,
-I've helped organize the ENSOL in its 2008, 2009 and 2010 editions. It was one
-of the biggest FLOSS meetings of Brazil's Northeast, attracting around 800
-participants per year.}
-
-\closesection{}                   % needed to renewcommands
-\renewcommand{\listitemsymbol}{-} % change the symbol for lists
-
-%\section{Extra 1}
-%\cvlistitem{Item 1}
-%\cvlistitem{Item 2}
-%\cvlistitem[+]{Item 3}            % optional other symbol
-
-%\section{Extra 2}
-%\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
-%\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
-%cvlistdoubleitem[\Neutral]{Item 3}{}
-
-% Publications from a BibTeX file
-%\nocite{*}
-%\bibliographystyle{plain}
-%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+\cvcomputer{Languages}{Ruby, Python, JavaScript, R, Bash} {}{}
+\cvcomputer{Frameworks}{Rails, D3.js, NodeJS} {}{}
 
 \end{document}
 
